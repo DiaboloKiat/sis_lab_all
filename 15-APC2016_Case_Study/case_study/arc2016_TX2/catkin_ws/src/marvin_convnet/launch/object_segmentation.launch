@@ -1,0 +1,9 @@
+<launch>
+  <!-- Realsense Camera -->
+  <!--<include file="$(find realsense_camera)/launch/sr300_nodelet_rgbd.launch"/> -->
+
+  <!-- PCL exmaple -->
+  <node pkg="marvin_convnet" type="detect" name="detect" output="screen"/>
+  <!-- rviz -->
+  <node pkg="rviz" type="rviz" name="rviz" args="-d $(find marvin_convnet)/config/rviz/rviz.rviz"/>
+</launch>

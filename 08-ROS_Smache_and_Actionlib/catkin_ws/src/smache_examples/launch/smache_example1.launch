@@ -1,0 +1,6 @@
+<!-- SIS Lab 7 smache example 1
+Michael Su Oct 2018 -->
+<launch>
+	<node pkg="smach_viewer" name="smach_viewer" type="smach_viewer.py" required="true"/>
+	<node pkg="smache_examples" name="smache_example1" type="example_1.py" output="screen" required="true"/>
+</launch>

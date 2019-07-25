@@ -1,0 +1,8 @@
+<!-- SIS Lab 8 robot smach example
+Michael Su Nov 2018 -->
+<launch>
+	<node pkg="smach_viewer" name="smach_viewer" type="smach_viewer.py" required="true"/>
+	<include file="$(find sis_mobile)/launch/move_base.launch" />
+	<include file="$(find sis_mobile)/launch/kaku_config.launch" />
+	<include file="$(find sis_arm_moveit_config)/launch/demo.launch" />
+</launch>
